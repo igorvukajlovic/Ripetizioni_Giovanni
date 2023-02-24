@@ -12,8 +12,12 @@ int main()
 
     for(int i = 0; i < limite; i++)
     {
-        if(i != 0) // ignoro lo 0 perché non è ne pari ne dispari
+        // ignoro lo 0 perché non è ne pari ne dispari. Avrei potuto assegnare 
+        // alla variabile iteratrice come valore di partenza 1, così non avrei 
+        // dovuto scrivere questa if, è (quasi) indifferente.
+        if(i != 0) 
         {
+            // Calcolo il modulo della variabile iteratrice e controllo il suo valore
             if(i % 2 == 0)
             {
                 qta_pari++;
